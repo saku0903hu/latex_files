@@ -1,0 +1,198 @@
+\documentclass{ltjsarticle}
+\usepackage{amsmath, amsfonts, bm, mathtools} % 数学パッケージ
+\usepackage{luatexja} % 日本語サポート
+\usepackage{diagbox} % 斜線付きセルを作成するためのパッケージ
+
+% プリアンブルに追加
+\usepackage{tcolorbox} % tcolorboxパッケージの読み込み
+
+% 定義環境のカスタム設定
+\tcolorboxenvironment{def}{
+  colback=blue!5!white, % 背景色
+  colframe=blue!75!black, % 枠線の色
+  fonttitle=\bfseries, % タイトルのフォント設定
+  title=Def. % タイトルを"Def."に設定
+}
+
+% 命題環境のカスタム設定
+\tcolorboxenvironment{prop}{
+  colback=green!5!white,
+  colframe=green!75!black,
+  fonttitle=\bfseries,
+  title=Prop.
+}
+
+% 定理環境のカスタム設定
+\tcolorboxenvironment{thm}{
+  colback=red!5!white,
+  colframe=red!75!black,
+  fonttitle=\bfseries,
+  title=Thm.
+}
+
+
+% 数式
+
+
+%表
+ % 斜線付きセルを作成するために必要
+% 画像
+
+\begin{document}
+
+\title{量子２メモ}
+\author{saku}
+\date{\today}
+\maketitle
+
+\section{異常Zeemann効果}
+$X$を確率変数、$x_1, x_2, \cdots, x_M$をその実現値とする。
+確率変数$X$がある値$x_i$をとる確率$P(X=x_i)$を$p_i$と略記する。\\
+
+\subsection{Stochastic Entropy}
+\begin{itembox}[l]{\textbf{Def. 情報量}}
+事象$x_i$のもつ情報量 \footnote{自己情報量やsurprisal、局所エントロピーとも呼ばれる。}を以下のように定義する。
+  \begin{align}
+    s(x_i) \coloneq- \ln{P(X=x_i)} \equiv -\ln{p_i}
+  \end{align}
+$p_i=1$のとき$s(x_i)=0$で、$p_i=0$のとき$s(x_i) = \infty$となる。\\
+直感的には、$s(x_i)$は「驚き度合い」を表す。意外な内容、すなわち確率の低い事象ほどその値が大きくなるからである。
+そして、そのようなめったに起らない事象ほど情報量が多いと考えられる。\\
+$s(x_i)$は一回の試行に対して定義されるため、同じ確率分布に従う試行であっても実現値によって異なる値になることに注意されたい。
+\end{itembox}
+
+\bigskip
+
+\begin{itembox}[l]{\textbf{Thm. 情報量の一意性}}
+ある事象の確率$p$の関数を$f(p)$とする。以下の2つの性質を満たす関数$f(p)$は一意に定まる。
+  \begin{enumerate}
+    \item $f(p)$は$p$の連続関数である
+    \item 独立な事象に対して$f(p)$は加法性をもつ：$f(pp')=f(p)+f(p')$
+  \end{enumerate}
+\end{itembox}
+
+\newpage
+
+\noindent{\textbf{Prf.}}\\
+$a^{n/m} = b \; (n, m \in \mathbb{N}, m \neq 0, a, b \in \mathbb{R})$とする。
+\begin{alignat*}{4}
+  f(a) &= f(a^{1/m} \cdot a^{1/m} \cdots a^{1/m}) \\
+  &= m f(a^{1/m}) && \quad (\text{加法性}) \\
+  f(b) &= f(a^{n/m}) && \quad (\text{$b$の定義}) \\
+  &= n f(a^{1/m}) && \quad (\text{加法性})
+\end{alignat*}
+$f(a^{1/m})$を消去すると、$f(b)=\frac{n}{m} \cdot f(a)$となる。\\
+$a$をNapier数 \footnote{情報学では、単位をbitにするために底を2にする。}とし、$b=x(>0)$とおくと、$\forall x \in \{ x \mid \ln{x} \in \mathbb{Q} \}$に対して
+\begin{align}
+  f(x) = f(\mathrm{e}) \ln{x}
+\end{align}
+が成り立つ。
+有理数の集合が実数内で稠密であることと関数$f$の連続性から、\\
+$f(x) \propto - \ln{x} \; (x \geq 0)$となる。\\
+
+\subsection{Shannon Entropy}
+
+情報量$-\ln{P(X=x_i)}$は実現値に依存するため、同じ確率分布に従う確率変数であってもその値はゆらぐ。
+そのため、ある確率分布に従う確率変数の平均的な情報量を、情報量の期待値として定義したい。
+\begin{itembox}[l]{\textbf{Def. Shannonエントロピー}}
+$X$を確率変数、$x_1, x_2, \cdots, x_M$をその実現値とする。
+Shannonエントロピーは、情報量$-\ln{P(X=x_i)}$の期待値を表す。
+  \begin{align}
+    H[X] \coloneq - \sum_{j=1}^M P(X=x_j) \ln{P(X=x_j)}
+  \end{align}
+\end{itembox}
+
+\smallskip
+
+\noindent{\textbf{Ex.}}\\
+コイントス$P(X=\mathrm{Heads})=p, \; P(X=\mathrm{Tails})=1-p$を考える。\\
+Shannonエントロピー:
+\begin{align}
+  H[X] = - p \ln{p} - (1-p) \ln{(1-p)}
+\end{align}
+$p$の関数として$H[X]$を図示すると図1のようになる。
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\linewidth]{out/binary_entropy.png}
+  \caption{2値確率変数のエントロピー} \label{binaryentropy}
+\end{figure}
+$p=\frac{1}{2}$のとき$H[X]$は最大値$\frac{1}{2} \ln{2} + \frac{1}{2} \ln{2} = \ln{2} \simeq 0.6931 \cdots$をとる。
+一方、$p=0, 1$のとき$H[X]$は最小値$0$をとる \footnote{$0\ln{0}=0$とする。}。
+
+\begin{itembox}[l]{\textbf{Thm. Shannonエントロピーの最大値}}
+  $X$を確率変数、$x_1, x_2, \cdots, x_M$をその実現値とする。
+  確率変数$X$が一様分布に従うとき、Shannonエントロピー$H[X]$が最大値になる。
+  \begin{align*}
+    H[X] = -\sum_j p_j \ln{p_j}\leq \ln{m}
+  \end{align*}
+\end{itembox}
+\medskip
+\noindent{\textbf{Prf.}}\\
+確率の規格化$\sum_j p_j = 1$という制約条件もと、Lagrangeの未定乗数法を使えば示せる。\\
+KL情報量を使えばより簡潔に示すことができる。
+
+\medskip
+
+Shannonエントロピーが大きくなればなるほど、我々はどの事象が生じるか予測するのが難しくなる。
+故に、Shannonエントロピーは不確実性の尺度としてとらえることが出来る。
+Shannonエントロピーは事象の確率分布によって決定される \footnote{故に、Shannonエントロピーは汎函数である。}ため、Shannonエントロピーはその固有の不確実性を測定することになる。
+
+では、どのような事象が起こりそうかという情報がある程度わかっている場合、不確実性の尺度をどのように定義するのかという疑問が生じるかもしれない。\\
+そこで、条件付きShannonエントロピーを以下のように定義する。
+
+\begin{itembox}[l]{\textbf{Def. 条件付きエントロピー}}
+  確率変数$X, Y$とし、その実現値をそれぞれ$x_i, y_i$とする。\\
+  $Y$の値が$y_j$という条件のもとでのShannonエントロピー:
+  \begin{align}
+    H[X|Y=y_j] \coloneq - \sum_{i} P(X=x_i|Y=y_j) \ln{P(X=x_i|Y=y_j)}
+  \end{align}
+  これを$Y$について平均をとったものが、$X$という条件のもとでの$Y$のShannonエントロピーの定義である。
+  \begin{align}
+    H[X|Y] &\coloneq \sum_{j} P(Y=y_j) H[X|Y=y_j]\\
+    &= - \sum_{j} P(Y=y_j) \sum_{i} P(X=x_i|Y=y_j) \ln{P(X=x_i|Y=y_j)}\\
+    &= - \sum_{i, j} P(X=x_i, Y=y_j) \ln{P(X=x_i|Y=y_j)}
+  \end{align}
+\end{itembox}
+
+\noindent{\textbf{Ex.}}\\
+表の出る確率がそれぞれ異なる3枚のコインのうちから1枚を確率的に選び、コイントスをするという状況を考える。
+それぞれの確率は以下の表の通りである。
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+  \hline
+         & 表 (Heads) の確率 & 裏 (Tails) の確率 & コインが選ばれる確率 \\ \hline
+  コインA & 1/3 & 2/3 & 1/5 \\ \hline
+  コインB & 2/3 & 1/3 & 1/5 \\ \hline
+  コインC & 1/2 & 1/2 & 3/5 \\ \hline
+  \end{tabular}
+  \caption{コインA, B, Cの表と裏の確率とそれぞれのコインが選ばれる確率}
+  \label{table:coins}
+\end{table}
+
+$X$をコイントスの結果を表す確率変数、$Y$をどのコインが選ばれるかを表す確率変数とする。
+どのコインが選ばれたかわからない状況で、コイントスの結果が表である確率は\\
+$P(\mathrm{Heads}) = P(A) P(\mathrm{Heads}|A) + P(B) P(\mathrm{Heads}|B) + P(C) P(\mathrm{Heads}|C) = \frac{1}{2}$である。
+したがって、Shannonエントロピー$H[X]=\ln{2} \simeq 0.6931 \cdots$となる。\\
+一方で、コインAかBが選ばれたという条件のもとでのShannonエントロピーは、\\
+$H[X|\mathrm{A}] + H[X|\mathrm{B}] = \frac{1}{3} \ln{3} +\frac{2}{3} \ln{\frac{3}{2}} \simeq 0.6365 \cdots$である。
+コインCが選ばれたという条件のもとでのShannonエントロピーは、$H[X|C] = \ln{2} \simeq 0.6931 \cdots$ のままである。
+以上より、条件付きエントロピー$H[X|Y]$は以下のようになる。
+\begin{align}
+  H[X|Y] &= P(\mathrm{A})H[X|\mathrm{A}] + P(\mathrm{B})H[X|\mathrm{B}] + P(\mathrm{C})H[X|\mathrm{C}]\\
+  &= \frac{1}{5} \cdot 0.6365 \cdots + \frac{1}{5} \cdot 0.6365 \cdots + \frac{3}{5} \cdot 0.6932 \cdots \simeq 0.6705
+\end{align}
+このようにどのコインが選ばれるかという情報により、コイントスの結果を表すShannonエントロピーは減少する。
+これはコイントスに限らず一般的に成立する。
+直感的に言えば、何らかの情報を受け取ったとするとShannonエントロピーは必ず減少する（か変わらない）。
+\begin{itembox}[l]{\textbf{Thm. 単調性}}
+  どのような確率変数$X$と$Y$についても
+  \begin{align}
+    H[X|Y] \leq H[X]
+  \end{align}
+\end{itembox}
+
+\noindent{\textbf{Prf.}}\\
+Sect.5.3.1.で示す。
+\end{document}

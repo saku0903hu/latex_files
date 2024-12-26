@@ -1,0 +1,24 @@
+\documentclass[a4paper,11pt]{jsarticle}
+
+% 数式
+\usepackage{amsmath,amsfonts}
+\usepackage{bm}
+% 画像
+\usepackage[dvipdfmx]{graphicx}
+
+\begin{document}
+
+\title{memo}
+\author{T.S.}
+\date{\today}
+\maketitle
+
+\section{微分方程式}
+\begin{align}
+  \frac{d}{dt} x &= \alpha x +\beta\\
+  &= \alpha (x +\frac{\beta}{\alpha})&\\
+  \frac{d}{dt} (x+\frac{\beta}{\alpha}) = \alpha (x +\frac{\beta}{\alpha})
+\end{align}
+とすれば線形な微分方程式に帰着する。
+
+\end{document}
