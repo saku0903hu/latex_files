@@ -1,14 +1,13 @@
 # Fdb version 4
-["dvipdf"] 1735213019 "out/anyon.dvi" "out/anyon.pdf" "out/anyon" 1735213019 0
-  "out/anyon.dvi" 1735217253 44532 89e65b2f77b96ba4040a7187371d8bf6 "latex"
+["dvipdf"] 1735217535 "out/anyon.dvi" "out/anyon.pdf" "out/anyon" 1735217535 0
+  "out/anyon.dvi" 1735217535 49052 5a1a0298732a83853e9998ba174baed2 "latex"
   (generated)
   "out/anyon.pdf"
   (rewritten before read)
-["latex"] 1735217253 "c:/GAKKO/latex/anyon.tex" "out/anyon.dvi" "anyon" 1735217254 2
-  "anyon.tex" 1735217250 53048 0275be781bfef4ad41d154205d73f4e2 ""
-  "anyon.toc" 0 -1 0 ""
-  "anyonwf.png" 0 -1 0 ""
-  "c:/GAKKO/latex/anyon.tex" 1735217250 53048 0275be781bfef4ad41d154205d73f4e2 ""
+["latex"] 1735217533 "c:/GAKKO/latex/anyon.tex" "out/anyon.dvi" "anyon" 1735217535 0
+  "anyon.tex" 1735217533 52755 4c1cc21325cb10d1e86afb4397527ad5 ""
+  "anyonwf.png" 1735215881 29539 6f3a3ecd26dbd0608138321a2faaf540 ""
+  "c:/GAKKO/latex/anyon.tex" 1735217533 52755 4c1cc21325cb10d1e86afb4397527ad5 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1699190447 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1699190447 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1699190447 856 7404843a5f798859944d7973a47821d5 ""
@@ -119,10 +118,9 @@
   "c:/texlive/2023/texmf-dist/web2c/texmf.cnf" 1699189858 41009 84b61f42d16d06bedb915f57aa2374cf ""
   "c:/texlive/2023/texmf-var/web2c/euptex/platex.fmt" 1699190679 6891645 520f052de05e1a40dcfff0b7841caa41 ""
   "c:/texlive/2023/texmf.cnf" 1699190639 713 e69b156964470283e0530f5060668171 ""
-  "out/anyon.aux" 1735217253 1654 bad11e6cf83858631a18686e99d16c85 "latex"
-  "out/anyon.out" 1735217253 1765 246223ff8c7f891a879fd2dc5d15740d "latex"
-  "out/anyon.toc" 1735217253 992 1aa5dd571bc1fb9663c02fe13273414d "latex"
-  "out/anyonwf.png" 0 -1 0 ""
+  "out/anyon.aux" 1735217535 1656 73cf922456a81485c9e1b1a75a9685b6 "latex"
+  "out/anyon.out" 1735217535 1765 246223ff8c7f891a879fd2dc5d15740d "latex"
+  "out/anyon.toc" 1735217535 994 78d4d1786803c14e4b467faf3a4f1686 "latex"
   (generated)
   "out/anyon.aux"
   "out/anyon.dvi"

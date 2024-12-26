@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.11.5)  26 DEC 2024 21:47
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.11.5)  26 DEC 2024 21:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -361,12 +361,9 @@ LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 Package hyperref Info: Link coloring OFF on input line 28.
+ (out/anyon.out) (out/anyon.out)
 \@outlinefile=\write3
 \openout3 = `anyon.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 16.60605pt on input line 34.
@@ -379,7 +376,7 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 5.76599pt on input line 34.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
-(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
@@ -404,22 +401,22 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 34.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 34.
-
-No file anyon.toc.
+ (out/anyon.toc
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 6.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 6.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 6.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 4.805pt on input line 6.
+)
 \tf@toc=\write4
 \openout4 = `anyon.toc'.
 
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 44.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 44.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 44.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 4.805pt on input line 44.
-[1
+ [1
 
-] [2]
+] [2] [3]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 130.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
@@ -428,54 +425,31 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 130.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 130.
- [3] [4]
+ [4] [5]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 205.
- [5]
-
-LaTeX Warning: File `anyonwf.png' not found on input line 224.
-
-
-! LaTeX Error: Cannot determine size of graphic in anyonwf.xbb (no BoundingBox).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.224 \includegraphics[width=100mm]{anyonwf.png}
-                                                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 File: anyonwf.png Graphic file (type bmp)
 <anyonwf.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 8.64899pt on input line 225.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 8.64899pt on input line 225.
-[6] [7] [8] [9] [10] (out/anyon.aux)
+ [6] [7] [8] [9] [10] (out/anyon.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-01>
  ***********
-
-
-Package rerunfilecheck Warning: File `anyon.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `anyon.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  246223FF8C7F891A879FD2DC5D15740D;1765.
+Package rerunfilecheck Info: File `anyon.out' has not changed.
+(rerunfilecheck)             Checksum: 246223FF8C7F891A879FD2DC5D15740D;1765.
  ) 
 Here is how much of TeX's memory you used:
- 11655 strings out of 476378
- 175050 string characters out of 5799074
+ 11624 strings out of 476378
+ 174324 string characters out of 5799074
  1932378 words of memory out of 5000000
- 33573 multiletter control sequences out of 15000+600000
+ 33536 multiletter control sequences out of 15000+600000
  609956 words of font info for 132 fonts, out of 8000000 for 9000
  41 hyphenation exceptions out of 8191
- 79i,12n,93p,354b,557s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,12n,93p,383b,539s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/anyon.dvi (10 pages, 44532 bytes).
+Output written on out/anyon.dvi (10 pages, 49052 bytes).

@@ -139,6 +139,12 @@ INPUT out/anyon.aux
 INPUT out/anyon.aux
 INPUT out/anyon.aux
 OUTPUT out/anyon.aux
+INPUT out/anyon.out
+INPUT out/anyon.out
+INPUT out/anyon.out
+INPUT out/anyon.out
+INPUT out/anyon.out
+INPUT out/anyon.out
 OUTPUT out/anyon.out
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
@@ -190,7 +196,9 @@ INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
-OUTPUT out/anyon.toc
+INPUT out/anyon.toc
+INPUT out/anyon.toc
+INPUT out/anyon.toc
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
@@ -212,10 +220,14 @@ INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
-INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+OUTPUT out/anyon.toc
 OUTPUT out/anyon.dvi
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT ./anyonwf.png
+INPUT ./anyonwf.png
+INPUT ./anyonwf.png
 INPUT extractbb -B cropbox -O anyonwf.png
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
