@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.11.5)  26 DEC 2024 21:24
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.11.5)  26 DEC 2024 21:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,18 +7,6 @@ entering extended mode
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-01>
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 <
-     <<<<<< HEAD
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 (c:/texlive/2023/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 Document Class: jsarticle 2023/02/23 jsclasses (okumura, texjporg)
 Class jsarticle Info: Autodetected engine: pLaTeX on input line 236.
@@ -60,17 +48,7 @@ LaTeX Info: Redefining \LaTeX on input line 135.
 LaTeX Info: Redefining \LaTeXe on input line 188.
 )
 \heisei=\count193
-
-Overfull \hbox (39.4445pt too wide) in paragraph at lines 1--1974
-[]\OT1/cmr/m/n/10 <<<<<<<
- []
-
-
-Overfull \hbox (29.4445pt too wide) in paragraph at lines 1--1974
-\OT1/cmr/m/n/10 HEAD
- []
-
-[1]) (c:/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (c:/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2023-10-27 v7.01d Hypertext links for LaTeX
  (c:/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
@@ -357,8 +335,7 @@ Package: tascmac 2020/01/15 v2.1 ascmac package (community edition)
 \@@bwsp=\box84
 \@bcal=\count294
 \shaderule=\dimen192
-))
-No file anyon.aux.
+)) (out/anyon.aux)
 \openout1 = `anyon.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -386,6 +363,7 @@ LaTeX Font Info:    ... okay on input line 28.
 Package hyperref Info: Link coloring OFF on input line 28.
 \@outlinefile=\write3
 \openout3 = `anyon.out'.
+
 
 
 Package hyperref Warning: Rerun to get /PageLabels entry.
@@ -439,9 +417,9 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 6.72699pt on input line 44.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 4.805pt on input line 44.
-[2
+[1
 
-] [3]
+] [2]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 130.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
@@ -450,10 +428,10 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 130.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 130.
- [4] [5]
+ [3] [4]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 205.
- [6]
+ [5]
 
 LaTeX Warning: File `anyonwf.png' not found on input line 224.
 
@@ -475,7 +453,7 @@ LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 8.64899pt on input line 225.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 8.64899pt on input line 225.
-[7] [8] [9] [10] [11] (out/anyon.aux)
+[6] [7] [8] [9] [10] (out/anyon.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2023-11-01>
@@ -492,12 +470,12 @@ Package rerunfilecheck Info: Checksums for `anyon.out':
 (rerunfilecheck)             After:  246223FF8C7F891A879FD2DC5D15740D;1765.
  ) 
 Here is how much of TeX's memory you used:
- 11652 strings out of 476378
- 175002 string characters out of 5799074
+ 11655 strings out of 476378
+ 175050 string characters out of 5799074
  1932378 words of memory out of 5000000
- 33572 multiletter control sequences out of 15000+600000
+ 33573 multiletter control sequences out of 15000+600000
  609956 words of font info for 132 fonts, out of 8000000 for 9000
  41 hyphenation exceptions out of 8191
  79i,12n,93p,354b,557s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/anyon.dvi (11 pages, 44468 bytes).
+Output written on out/anyon.dvi (10 pages, 44532 bytes).

@@ -1,15 +1,14 @@
 # Fdb version 4
 ["dvipdf"] 1735213019 "out/anyon.dvi" "out/anyon.pdf" "out/anyon" 1735213019 0
-  "out/anyon.dvi" 1735215886 44468 20fb6f69dad7f65e595ce5693c9375a1 "latex"
+  "out/anyon.dvi" 1735217253 44532 89e65b2f77b96ba4040a7187371d8bf6 "latex"
   (generated)
   "out/anyon.pdf"
   (rewritten before read)
-["latex"] 1735215885 "c:/GAKKO/latex/anyon.tex" "out/anyon.dvi" "anyon" 1735215886 2
-  "anyon.aux" 0 -1 0 ""
-  "anyon.tex" 1735215881 53447 eeae3ac7d326c4d5dc64bbcd4402cfe5 ""
+["latex"] 1735217253 "c:/GAKKO/latex/anyon.tex" "out/anyon.dvi" "anyon" 1735217254 2
+  "anyon.tex" 1735217250 53048 0275be781bfef4ad41d154205d73f4e2 ""
   "anyon.toc" 0 -1 0 ""
   "anyonwf.png" 0 -1 0 ""
-  "c:/GAKKO/latex/anyon.tex" 1735215881 53447 eeae3ac7d326c4d5dc64bbcd4402cfe5 ""
+  "c:/GAKKO/latex/anyon.tex" 1735217250 53048 0275be781bfef4ad41d154205d73f4e2 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1699190447 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1699190447 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1699190447 856 7404843a5f798859944d7973a47821d5 ""
@@ -120,9 +119,9 @@
   "c:/texlive/2023/texmf-dist/web2c/texmf.cnf" 1699189858 41009 84b61f42d16d06bedb915f57aa2374cf ""
   "c:/texlive/2023/texmf-var/web2c/euptex/platex.fmt" 1699190679 6891645 520f052de05e1a40dcfff0b7841caa41 ""
   "c:/texlive/2023/texmf.cnf" 1699190639 713 e69b156964470283e0530f5060668171 ""
-  "out/anyon.aux" 1735215886 1662 4dae2d0b3af8f232587fd78194626e70 "latex"
-  "out/anyon.out" 1735215886 1765 246223ff8c7f891a879fd2dc5d15740d "latex"
-  "out/anyon.toc" 1735215886 994 eed675f37589cffbfbb90c77435e17e2 "latex"
+  "out/anyon.aux" 1735217253 1654 bad11e6cf83858631a18686e99d16c85 "latex"
+  "out/anyon.out" 1735217253 1765 246223ff8c7f891a879fd2dc5d15740d "latex"
+  "out/anyon.toc" 1735217253 992 1aa5dd571bc1fb9663c02fe13273414d "latex"
   "out/anyonwf.png" 0 -1 0 ""
   (generated)
   "out/anyon.aux"
